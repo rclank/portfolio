@@ -1,0 +1,78 @@
+:root {
+    --primary-color: #31343d;
+    --secondary-color: #94cccc;
+    --tertiary-color: #455975;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--tertiary-color);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+    padding: 60px;
+}
+
+header {
+    background-color: var(--primary-color);
+    padding: 20px 35px 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+header h1 {
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    font-size: 42px;
+    padding-left: 100px;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+header nav {
+    margin: 7px 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-size: 2.0vw;
+    border-bottom: 4px solid var(--secondary-color);
+    margin: 0 5px;
+}
+
+.hero {
+    background-image: url(../images/christian-holzinger-CUY_YHhCFl4-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero h3 {
+    font-size: 32px;
+    padding: 10px;
+    background-color: var(--secondary-color);
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+}
+
+.breakout {
+    display: flex;
+}
