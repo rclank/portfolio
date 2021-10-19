@@ -15,6 +15,10 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+h1, h2 {
+    font-size: 42px;
+}
+
 section {
     padding: 60px;
 }
@@ -29,7 +33,7 @@ header {
 header h1 {
     color: var(--primary-color);
     background-color: var(--secondary-color);
-    font-size: 42px;
+    /* font-size: 42px; */
     padding-left: 100px;
 }
 
@@ -73,6 +77,25 @@ header nav ul li a {
     bottom: 10px;
 }
 
-.breakout {
+.content {
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.breakout {
+    width: 100%;
+    display: flex;
+    /* justify-content: flex-end; */
+}
+
+.breakout h2 {
+    text-align: right;
+    border-right: 4px solid var(--tertiary-color);
+    padding-right: 10px;
+}
+
+.breakout div {
+    padding-left: 20px;
 }
